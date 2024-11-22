@@ -1,0 +1,11 @@
+transaction_id,customer_name,amount,transaction_date
+101,John Smith,784,2023-01-31
+102,Jane Doe,659,2023-02-28
+103,Michael Jonson,729,2023-03-31
+104,Chris Lee,292,2023-04-30
+105,Katherine Davis,935,2023-05-31
+106,David Martinez,863,2023-06-30
+107,Sarah Brown,807,2023-07-31
+108,James Wilson,459,2023-08-31
+109,Patricia Taylor,109,2023-09-30
+110,Robet Miller,823,2023-10-31
