@@ -1,0 +1,14 @@
+WITH
+weekday_amount as (SELECT 
+    AMOUNT, 
+    DAYNAME(TRANSACTION_DATE) as DAY_NAME,
+    DAYOFWEEK(TRANSACTION_DATE) as DAY_NUMBER,
+FROM {table_name})
+
+SELECT 
+    SUM(AMOUNT) as TOTAL_AMOUNT, 
+    DAY_NAME,
+    SUM(DAY_NUMBER)/COUNT(DAY_NUMBER) as DAY_NUMBER
+FROM weekday_amount
+GROUP BY day_name
+ORDER BY day_number

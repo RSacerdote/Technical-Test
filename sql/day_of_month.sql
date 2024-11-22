@@ -1,0 +1,6 @@
+SELECT 
+    SUM(AMOUNT) as TOTAL_AMOUNT, 
+    EXTRACT(DAY FROM TRANSACTION_DATE) as DAY_OF_MONTH 
+FROM {table_name} 
+GROUP BY day_of_month
+ORDER BY day_of_month ASC
