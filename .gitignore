@@ -2,3 +2,4 @@ data/assessment.pdf
 
 .venv/
 .env
+__pycache__/
